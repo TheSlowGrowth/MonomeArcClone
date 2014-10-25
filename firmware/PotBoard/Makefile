@@ -41,7 +41,7 @@
 
 
 # MCU name
-MCU = atmega48
+MCU = atmega88p
 
 
 # Processor frequency.
