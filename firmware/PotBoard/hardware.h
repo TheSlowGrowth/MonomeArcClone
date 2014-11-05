@@ -51,7 +51,7 @@
 
 // Defines for the adress switch
 #define ADDR_SW_PULLUPS	PORTC |= (1<<PC0) | (1<<PC1) | (1<<PC2) | (1<<PC3)
-#define ADRR			~(PINC | 0xF0)
+#define ADRR			~(PINC | 0xF0) + 1
 
 
 // Defines for the rotary encoder

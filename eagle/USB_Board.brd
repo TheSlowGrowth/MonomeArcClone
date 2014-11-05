@@ -28,9 +28,9 @@
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
@@ -124,7 +124,6 @@
 <wire x1="23.8" y1="27.8" x2="23.8" y2="24.2" width="0.3048" layer="51"/>
 <wire x1="23.8" y1="24.2" x2="38.2" y2="24.2" width="0.3048" layer="51"/>
 <wire x1="38.2" y1="24.2" x2="38.2" y2="27.8" width="0.3048" layer="51"/>
-<rectangle x1="42.6" y1="9.7" x2="50.7" y2="11.8" layer="16"/>
 </plain>
 <libraries>
 <library name="atmel">
