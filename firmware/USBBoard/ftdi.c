@@ -109,6 +109,10 @@ static void FTDI_processMessage( void )
 			uint8_t enc = ftdi_in_buffer[1];
 			uint8_t led = ftdi_in_buffer[2];
 			uint8_t val = ftdi_in_buffer[3];
+			while (enc >= NUM_ENCS)
+				enc -= NUM_ENCS;
+			while (led >= 64)
+				led -= NUM_ENCS;
 			BUFFER_setLED(enc, led, val);
 			break;
 		}
@@ -116,6 +120,8 @@ static void FTDI_processMessage( void )
 		{
 			uint8_t enc = ftdi_in_buffer[1];
 			uint8_t val = ftdi_in_buffer[2];
+			while (enc >= NUM_ENCS)
+				enc -= NUM_ENCS;
 			BUFFER_setAllInEncoder(enc, val);
 			break;
 		}
@@ -123,7 +129,9 @@ static void FTDI_processMessage( void )
 		{
 			uint8_t enc = ftdi_in_buffer[1];
 			uint8_t* val_p = &ftdi_in_buffer[2];
-			BUFFER_setCompleteEncoder(enc, val_p); 
+			while (enc >= NUM_ENCS)
+				enc -= NUM_ENCS;
+			BUFFER_setCompleteEncoder(enc, val_p);
 			break;
 		}
 		case COMM_I_LED_RANGE: 
@@ -133,6 +141,8 @@ static void FTDI_processMessage( void )
 			uint8_t end = ftdi_in_buffer[3];
 			uint8_t val = ftdi_in_buffer[4];
 			
+			while (enc >= NUM_ENCS)
+				enc -= NUM_ENCS;
 			while (start >= 64)
 				start -= 64;
 			while (end >= 64)
@@ -144,15 +154,32 @@ static void FTDI_processMessage( void )
 		}
 		case COMM_I_QUERY: 
 		{
+            // answer with 0x00 A B (total message length: 3 bytes)
+            // where A is the section (grids, encoders, analog inputs, etc.)
+            // and B is the number that are available.
 			while (!FTDI_canTakeNewByte())
 				FTDI_trySendCommandsToHost();
 			FTDI_addOutputBufferFront(COMM_O_QUERY_RESP);
 			while (!FTDI_canTakeNewByte())
 				FTDI_trySendCommandsToHost();
-			FTDI_addOutputBufferFront(0x02);
+			FTDI_addOutputBufferFront(0x05); // 5 == encoders
 			while (!FTDI_canTakeNewByte())
 				FTDI_trySendCommandsToHost();
 			FTDI_addOutputBufferFront((uint8_t) NUM_ENCS);
+            // monome eurorack modules (like ansible) expect the response to be
+            // 6 bytes long, although they don't seem to care about the additional
+            // bytes. Seems dodgy, but the only way to deal with this is to send
+            // another response for a section we don't actually have
+            // lets simply report that we have 0 grids.
+            while (!FTDI_canTakeNewByte())
+				FTDI_trySendCommandsToHost();
+			FTDI_addOutputBufferFront(COMM_O_QUERY_RESP);
+			while (!FTDI_canTakeNewByte())
+				FTDI_trySendCommandsToHost();
+			FTDI_addOutputBufferFront(0x01); // 1 == grid
+			while (!FTDI_canTakeNewByte())
+				FTDI_trySendCommandsToHost();
+			FTDI_addOutputBufferFront(0); // no grids.
 			break;
 		}
 		case COMM_I_WRITE_ID: 
