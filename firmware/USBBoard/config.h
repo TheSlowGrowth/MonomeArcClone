@@ -20,5 +20,5 @@
 
 #define ID_ADDR 0x00
 
-uint8_t* CONFIG_getID( void );
+const uint8_t* CONFIG_getID( void );
 void CONFIG_writeID( uint8_t* ID );
