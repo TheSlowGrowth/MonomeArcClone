@@ -18,11 +18,12 @@
  */  
  
 #include "config.h"
+#include "hardware.h"
 
 #if NUM_ENCS == 2
-    const uint8_t ID[32] = "arc2                           ";
+    const uint8_t ID[32] = "arc2";
 #elif NUM_ENCS == 4
-    const uint8_t ID[32] = "arc4                           ";
+    const uint8_t ID[32] = "arc4";
 #else
     const uint8_t ID[32] = { 0 };
 #endif

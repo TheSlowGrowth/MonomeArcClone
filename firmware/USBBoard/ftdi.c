@@ -194,7 +194,7 @@ static void FTDI_processMessage( void )
 			FTDI_addOutputBufferFront(COMM_O_QUERY_ID_RESP);
 			
 			int i;
-			uint8_t* ID_p = CONFIG_getID();
+			const uint8_t* ID_p = CONFIG_getID();
 			for (i = 0; i < 32; i++) {
 				while (!FTDI_canTakeNewByte())
 					FTDI_trySendCommandsToHost();
