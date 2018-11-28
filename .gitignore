@@ -34,3 +34,6 @@
 *.lss
 *.map
 *.sym
+
+# OS crap
+.DS_Store
