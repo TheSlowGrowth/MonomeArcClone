@@ -315,7 +315,7 @@ ISR(TWI_vect)
 			// send stop condition
 			TWCR = I2C_STOP;
 			// wait until it's sent
-            while(TWCR & (1<<TWSTO));
+            while(TWCR & (1<<TWSTO)) {};
                         			
 			TWCR = I2C_ACK;
 			i2c_busy = 0;
@@ -366,7 +366,7 @@ ISR(TWI_vect)
 			// send stop condition
 			TWCR = I2C_STOP;
 			// wait until it's sent
-            while(TWCR & (1<<TWSTO));
+            while(TWCR & (1<<TWSTO)) {};
                         
 			// end message
 			i2c_addInputBufferFront(i2c_temp_message_in);
@@ -384,7 +384,7 @@ ISR(TWI_vect)
 			// send stop condition
 			TWCR = I2C_STOP;
 			// wait until it's sent
-            while(TWCR & (1<<TWSTO));
+            while(TWCR & (1<<TWSTO)) {};
 			// increase the timeout for this message
 			i2c_timeout_counter++;
 			// try sending it again
@@ -416,7 +416,7 @@ ISR(TWI_vect)
 				// end message by sending a STOP condition
 				TWCR = I2C_STOP;
 				// wait until it's sent
-				while(TWCR & (1<<TWSTO));
+				while(TWCR & (1<<TWSTO)) {};
 				// remove this message from the buffer
 				i2c_removeOutputBufferBack();
 				
@@ -435,9 +435,3 @@ ISR(TWI_vect)
 		}
 	}
 }
-
-
-
-
-
-

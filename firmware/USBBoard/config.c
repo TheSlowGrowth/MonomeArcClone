@@ -18,15 +18,24 @@
  */  
  
 #include "config.h"
+#include "hardware.h"
 
-uint8_t ID[32] = { 0 };
+#if NUM_ENCS == 2
+    const uint8_t ID[32] = "monome arc 2";
+#elif NUM_ENCS == 4
+    const uint8_t ID[32] = "monome arc 4";
+#else
+    const uint8_t ID[32] = "monome arc";
+#endif
 
-uint8_t* CONFIG_getID( void ) 
+
+const uint8_t* CONFIG_getID( void )
 {
 	return &ID[0];
 }
 
 void CONFIG_writeID( uint8_t* ID_p) 
 {
-	memcpy(&ID[0], ID_p, 32);
+    // ignore this for now?
+	//memcpy(&ID[0], ID_p, 32);
 }
