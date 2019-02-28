@@ -66,7 +66,7 @@ If nothing is found, search for this part:
 
 This is the header for the (almost) equal ATMega88. We simply copy the whole passage below this line (down to the next similar looking header) and change a few things. The whole passage you have to copy is roughly 200 lines long.
 
-Duplicate the whole passage and change the lines highlighted with yellow:
+Duplicate the whole passage and change the beginning to:
 
 ```
 #------------------------------------------------------------
@@ -112,16 +112,18 @@ Now avrdude knows the microprocessor.
 
 Now we have to teach *AVR-Burn-O-Mat* as well. Go to the installation directory (mine is: `D:\Program Files (x86)\AVR Burn-O-Mat)` and open the file `AVR8_Burn_O_Mat_Config.xml`. With a text editor (e.g. geany).
 
-Again, search for "Atmega88p". If nothing is found, search for "Atmega88". It should take you to this line:
+Again, search for "Atmega88p". If it can be found, all is well and you don't have to do anything here. If nothing is found, search for "Atmega88". It should take you to this line:
 
-```<AVR name="m88" caption="ATmega88">
-
-<Fuse name="UNUSED_E7" bit="7" ...
-
-...
-
-...
 ```
+<AVR name="m88" caption="ATmega88">
+   <Fuse name="UNUSED_E7" bit="7" ...
+
+```
+Copy the whole block (everything between `<AVR name="m88" ... ` and `</AVR>`) and change the first line to 
+```
+<AVR name="m88p" caption="ATmega88p">
+```
+Now *AVR-Burn-O-Mat* can program your Atmega88p processor.
 
 Now open *AVR-Burn-O-Mat* and go to the settings page. Check if the directories are correct and enter the connection settings for your programmer.
 
