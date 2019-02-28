@@ -269,7 +269,7 @@ Double check that all the boards function correctly before final assembly. Make 
 
 Assuming you’re working with a milled panel based on `case/Alu Faceplate.pdf` and laser cut acrylic parts based on the Glas-Ring and Light_Shaper drawings, assembly is quite straightforward. The fit of the laser cut parts is tight, and often the outer diameter is slightly larger on one edge than the other, so look carefully at the edge angles of both parts and experiment with their orientation to find the best results. You can see the angles here:
 
-![](./Pictures/ring-assembly.png)
+![](./Pictures/ring-assembly.jpg)
 
 Depending on the quality of your laser cutter, you may have to manually remove some leftover parts from the light shaper with a small sharp knife.
 
