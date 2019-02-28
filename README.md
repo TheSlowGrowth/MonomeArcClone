@@ -64,9 +64,9 @@ If nothing is found, search for this part:
 #------------------------------------------------------------
 ```
 
-This is the header for the (almost) equal ATMega88. We simply copy thewhole passage below this line (down to the next similar looking header)and change a few things. The whole passage you have to copy is roughly200 lines long.
+This is the header for the (almost) equal ATMega88. We simply copy the whole passage below this line (down to the next similar looking header) and change a few things. The whole passage you have to copy is roughly 200 lines long.
 
-Duplicate the whole passage and change the lines highlighted withyellow:
+Duplicate the whole passage and change the lines highlighted with yellow:
 
 ```
 #------------------------------------------------------------
@@ -110,10 +110,9 @@ bs2 = 0xc2;
 
 Now avrdude knows the microprocessor.
 
-Now we have to teach *AVR-Burn-O-Mat *as well. Go to the installation directory (mine is: D:\\Program Files (x86)\\AVR Burn-O-Mat) and open the file *AVR8\_Burn\_O\_Mat\_Config.xml.* With a text editor (e.g. geany).
+Now we have to teach *AVR-Burn-O-Mat* as well. Go to the installation directory (mine is: `D:\Program Files (x86)\AVR Burn-O-Mat)` and open the file `AVR8_Burn_O_Mat_Config.xml`. With a text editor (e.g. geany).
 
-Again, search for "Atmega88p". If nothing is found, search for
-"Atmega88". It should take you to this line:
+Again, search for "Atmega88p". If nothing is found, search for "Atmega88". It should take you to this line:
 
 ```<AVR name="m88" caption="ATmega88">
 
