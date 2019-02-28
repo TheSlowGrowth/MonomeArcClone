@@ -216,7 +216,7 @@ First, set the fuses, based on [this fuse calculation](http://eleccelerator.com/
 
 `avrdude -V -p m88p -c YOUR_PROGRAMMER_ID -P YOUR_PROGRAMMER_PORT -B 10 -e -u -U lfuse:w:0xD6:m -U hfuse:w:0xDF:m -U efuse:w:0xF9:m -U lock:w:0xFF:m`
 
-Then, flash the USB board firmware. Swap `arc4_` for `arc2_` in the unlikely event you’re building a two-ring arc):
+Then, flash the USB board firmware. Swap `arc4_` for `arc2_` in the unlikely event you’re building a two-ring arc:
 
 `avrdude -V -p m88p -c YOUR_PROGRAMMER_ID -P YOUR_PROGRAMMER_PORT -B 2 -U flash:w:./firmware/compiled_hex/arc4_firmware_usb_board_atmega88p.hex:i -U lock:w:0xFF:m`
 
@@ -272,7 +272,7 @@ Assuming you’re working with a milled panel based on `case/Alu Faceplate.pdf` 
 
 Depending on the quality of your laser cutter, you may have to manually remove some leftover parts from the light shaper with a small sharp knife.
 
-For a more diffused LED appearance, either cut the rings from frosted acyrlic, lightly sand the underside of the rings with 400 grit sandpaper, or perhaps put a ring of very thin paper between the ring and light shaper.
+For a more diffused light from the LEDs, either cut the rings from frosted acyrlic, lightly sand the underside of the rings with 400 grit sandpaper, or perhaps put a ring of very thin paper between the ring and light shaper.
 
 The blind threaded holes in the top panel are not deep enough for normal male-female M3 hex spacers, so insert 12mm setscrews (preferably fastened with thread lock e.g. loctite) and then screw 4mm female-female hex spacers over them before attaching the ring board.
 
@@ -290,7 +290,7 @@ You’ll need the following hardware:
 * 6 x 6mm M3 Screw
 * 4 x 8mm M3 Screw
 
-If you want to build a more comprehensive case, refer to the layout in `case/Monome Arc Clone Walnut Case.ezdraw` and `case/Monome Arc Clone Walnut Case Plans 500 x 360.svg` for dimensions to design a case around. Make sure the bounding box in the SVG is scaled to 500mm by 360mm in your CAD application, and then everything else should be the correct size. Parts for a CNC-routed wooden case and knobs are given as an example.
+If you want to build a more comprehensive case, refer to the layout in `case/Monome Arc Clone Walnut Case.ezdraw` and `case/Monome Arc Clone Walnut Case Plans 500 x 360.svg` for dimensions to design a case around. Make sure the bounding box in the SVG is scaled to 500mm by 360mm in your CAD application, and then everything else should be the correct size. Parts for the CNC-routed wooden case and knobs shown below are given as an example.
 
 Congratulations on assembling your arc!
 
