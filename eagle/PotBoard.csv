@@ -1,0 +1,17 @@
+"Qty";"Value";"Device";"Package";"Parts";"Description";"MF";"MPN";"OC_FARNELL";"OC_NEWARK";
+"1";"";"MICROMATCH-10-SMD";"MICROMATCH-10-SMD";"ISP";"";"";"";"";"";
+"1";"";"PINHD-2X5_2.54-SMD";"2X05SMD";"JP4";"PIN HEADER";"";"";"";"";
+"5";"100n";"C-EUC0603";"C0603";"C13, C14, C15, C16, C17";"CAPACITOR, European symbol";"";"";"";"";
+"2";"10k";"R-EU_R0603";"R0603";"R1, R5";"RESISTOR, European symbol";"";"";"";"";
+"3";"10n";"C-EUC0603";"C0603";"C7, C8, C9";"CAPACITOR, European symbol";"";"";"";"";
+"2";"10u";"CPOL-EU153CLV-0505";"153CLV-0505";"C3, C4";"POLARIZED CAPACITOR, European symbol";"";"";"";"";
+"1";"1k";"R-EU_R0603";"R0603";"R15";"RESISTOR, European symbol";"";"";"";"";
+"1";"20MHz";"CRYSTALSM49";"SM49";"Q1";"CRYSTAL";"";"";"";"";
+"1";"219-02";"219-02";"CTS-219-02";"ADRESS";"Surface Mount DIP Switch Series 219 SMT";"";"";"unknown";"unknown";
+"2";"22p";"C-EUC0603";"C0603";"C1, C2";"CAPACITOR, European symbol";"";"";"";"";
+"3";"330";"R-EU_R0603";"R0603";"R2, R3, R4";"RESISTOR, European symbol";"";"";"";"";
+"3";"4k7";"R-EU_R0603";"R0603";"R9, R10, R11";"RESISTOR, European symbol";"";"";"";"";
+"1";"BOURNS_EM14";"BOURNS_EM14";"BOURNS_EM14_AXIAL";"U$1";"Bourns EM14 optical encoder";"";"";"";"";
+"1";"IRLML5203";"IRLML5203";"MICRO3";"Q3";"HEXFET P-Channel Power MOSFET";"";"";"";"";
+"1";"MEGA8-AI";"MEGA8-AI";"TQFP32-08";"IC1";"MICROCONTROLLER";"";"";"";"";
+"1";"MICROMATCH-8SMD";"MICROMATCH-8SMD";"MICROMATCH-8-SMD";"X1";"MicroMaTch 8  7-215464-8 / 0-215464-8";"";"";"";"";

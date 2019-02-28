@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with EazyDraw for Mac ( http://www.eazydraw.com/ ) -->
+
+<svg
+    version="1.1"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:cc="http://creativecommons.org/ns#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:svg="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns="http://www.w3.org/2000/svg"
+    width="943.769685039"
+    height="263.45472441"
+    viewBox="0, 0, 755.015748031, 210.763779528"
+    preserveAspectRatio="none"
+    id="svg2">
+   <defs
+       id="defs_2AA5098C"/>
+   <metadata
+       id="metadata7">
+      <rdf:RDF>
+         <cc:Work
+             rdf:about="">
+            <dc:format>image/svg+xml</dc:format>
+            <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+            <dc:title></dc:title>
+         </cc:Work>
+      </rdf:RDF>
+   </metadata>
+   <g
+       id="layer_Paper"
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-opacity:1;fill-rule:nonzero;stroke-linecap:square;stroke-linejoin:miter;stroke-width:1;stroke-miterlimit:10">
+      <path
+          style="fill:none;stroke-linecap:butt"
+          id="63521D2D"
+          d="M17.5078740157,0.5 C257.507874016,0.5 497.507874015,0.5 737.507874015,0.5 C746.011811023,0.5 754.515748031,9.00393700785 754.515748031,17.5078740157 C754.515748031,76.0905511812 754.515748031,134.673228347 754.515748031,193.255905512
+C754.515748031,201.75984252 746.011811023,210.263779528 737.507874015,210.263779528 C497.507874015,210.263779528 257.507874016,210.263779528 17.5078740157,210.263779528 C9.00393700785,210.263779528 0.5,201.75984252 0.5,193.255905512
+C0.5,134.673228347 0.5,76.0905511812 0.5,17.5078740157 C0.5,9.00393700785 9.00393700785,0.5 17.5078740157,0.5 z"/>
+      <circle
+          style="stroke:none"
+          id="73521D2D"
+          cx="30.2637795272"
+          cy="30.2637795279"
+          r="4.251968503937"/>
+      <circle
+          style="stroke:none"
+          id="83521D2D"
+          cx="30.2637795272"
+          cy="180.5"
+          r="4.251968503937"/>
+      <circle
+          style="stroke:none"
+          id="93521D2D"
+          cx="724.751968504"
+          cy="180.5"
+          r="4.251968503937"/>
+      <circle
+          style="stroke:none"
+          id="A3521D2D"
+          cx="724.751968504"
+          cy="30.2637795279"
+          r="4.251968503937"/>
+   </g>
+</svg>
