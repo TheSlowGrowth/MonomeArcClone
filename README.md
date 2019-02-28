@@ -264,6 +264,8 @@ Then assemble the other boards and connect them to the ribbon cable. Flash them 
 
 Double check that all the boards function correctly before final assembly. Make sure that all LEDs light, that the encoders send turn and button press messages, and that the boards are in the right order.
 
+If you don’t have Max MSP and don’t want to install the very large free Max player, you can use the small Puredata arc test patch in `firmware/arc-scratchpad.pd` to test and debug your arc. It should run in any version of Puredata, and requires no externals.
+
 ## Physical Case Construction and Assembly
 
 Assuming you’re working with a milled panel based on `case/Alu Faceplate.pdf` and laser cut acrylic parts based on the Glas-Ring and Light_Shaper drawings, assembly is quite straightforward. The fit of the laser cut parts is tight, and often the outer diameter is slightly larger on one edge than the other, so look carefully at the edge angles of both parts and experiment with their orientation to find the best results. You can see the angles here:
